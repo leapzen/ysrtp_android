@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/splash_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash_screen" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/til_one"
+            android:orientation="horizontal"
+            android:layout_toStartOf="@+id/btn_get_otp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:gravity="center|end"
+                android:textColor="@color/black"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/india_code"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_login_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:hint="@string/hint_mobile"
+                    android:textColorHint="@color/black"
+                    android:background="@color/white"
+                    android:textSize="20sp"
+                    android:maxLength="10"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="center|start"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/_5sdp"
+                    android:maxLines="1" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_action"
+            android:id="@+id/btn_get_otp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/til_one"
+            android:textColor="@color/white"
+            android:text="@string/proceed"
+            android:textStyle="bold"
+            android:onClick="verifyMobile"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:indeterminateTint="@color/colorPrimaryDark" />
+    </RelativeLayout>
+</layout>

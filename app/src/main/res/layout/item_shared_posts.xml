@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="sharedPosts"
+            type="ysrtp.party.app.home.SingleArticle"/>
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/colorSecondary"
+        app:strokeWidth="2dp"
+        app:cardElevation="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/transparent"
+                android:largeImage="@{sharedPosts.large}"
+                android:smallImage="@{sharedPosts.small}"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@{sharedPosts.articleType}"
+                android:visibility='@{sharedPosts.articleType.equalsIgnoreCase("normal") ? View.GONE : View.VISIBLE}'
+                app:layout_constraintBottom_toTopOf="@+id/holder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO" />
+
+            <RelativeLayout
+                android:id="@+id/holder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_post">
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_alignParentStart="true"
+                    app:drawableTopCompat="@drawable/ic_share" />
+
+                <TextView
+                    android:id="@+id/tv_shared_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/well_done_nthanks_for_sharing"
+                    android:layout_toStartOf="@+id/tv_like"
+                    android:layout_toEndOf="@+id/tv_share"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:drawableTop="@{sharedPosts.favourite ? @drawable/ic_favorite : @drawable/ic_not_favorite}" />
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

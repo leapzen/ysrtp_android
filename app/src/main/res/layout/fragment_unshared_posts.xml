@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.unshared.UnSharedPostsFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_no_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_20sdp"
+                android:drawableTop="@drawable/ic_info"
+                android:text="@string/no_unshared_posts"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_unshared_posts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:id="@+id/fab_move_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/arrow_up_float"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_15sdp"/>
+
+        </RelativeLayout>
+
+        <include android:id="@+id/layout_loading"
+            layout="@layout/loading_screen"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+
+    <entry>
+        <key>app_name</key>
+        <value>PartyApp</value>
+    </entry>
+
+    //PARTY
+    <entry>
+        <key>crash_info</key>
+        <value>Application crash detected</value>
+    </entry>
+    <entry>
+        <key>crash_message</key>
+        <value>Something needs to be fixed! We collected the crash report and we will fix it.</value>
+    </entry>
+
+    //Splash
+    <entry>
+        <key>new_update_title</key>
+        <value>A New Update is Available</value>
+    </entry>
+    <entry>
+        <key>new_update_required</key>
+        <value>Please update the app to the new version.</value>
+    </entry>
+    <entry>
+        <key>update</key>
+        <value>Update</value>
+    </entry>
+    <entry>
+        <key>playStore_redirect_url</key>
+        <value>market://details?id=ysrtp.party.app</value>
+    </entry>
+
+    //Login
+    <entry>
+        <key>login</key>
+        <value>Login</value>
+    </entry>
+    <entry>
+        <key>hint_name</key>
+        <value>Name</value>
+    </entry>
+    <entry>
+        <key>hint_mobile</key>
+        <value>Mobile</value>
+    </entry>
+    <entry>
+        <key>name_required</key>
+        <value>Enter your name</value>
+    </entry>
+    <entry>
+        <key>hint_district</key>
+        <value>District</value>
+    </entry>
+    <entry>
+        <key>hint_constituency</key>
+        <value>Assembly Constituency</value>
+    </entry>
+    <entry>
+        <key>hint_panchayat</key>
+        <value>Gram Panchayat</value>
+    </entry>
+    <entry>
+        <key>hint_block</key>
+        <value>Block/Municipality/NAC</value>
+    </entry>
+    <entry>
+        <key>register</key>
+        <value>Register</value>
+    </entry>
+    <entry>
+        <key>name_min_char</key>
+        <value>Name should be minimum 3 characters</value>
+    </entry>
+    <entry>
+        <key>mobile_required</key>
+        <value>Enter your mobile number</value>
+    </entry>
+    <entry>
+        <key>mobile_invalid</key>
+        <value>Invalid mobile number</value>
+    </entry>
+    <entry>
+        <key>mobile_digits</key>
+        <value>Mobile number should be 10 digits</value>
+    </entry>
+    <entry>
+        <key>district_required</key>
+        <value>Select your district</value>
+    </entry>
+    <entry>
+        <key>constituency_required</key>
+        <value>Enter your constituency</value>
+    </entry>
+    <entry>
+        <key>block_required</key>
+        <value>Enter your Block/Municipality/NAC</value>
+    </entry>
+    <entry>
+        <key>panchayat_required</key>
+        <value>Enter your panchayat</value>
+    </entry>
+
+    <entry>
+        <key>select_district</key>
+        <value>Select your district</value>
+    </entry>
+
+    <entry>
+        <key>select_constituency</key>
+        <value>Select your constituency</value>
+    </entry>
+
+    <entry>
+        <key>select_block</key>
+        <value>Select your block</value>
+    </entry>
+
+    <entry>
+        <key>select_panchayat</key>
+        <value>Select your gram panchayat</value>
+    </entry>
+
+    <entry>
+        <key>ward_required</key>
+        <value>Enter your ward number</value>
+    </entry>
+
+    <entry>
+        <key>referred_by</key>
+        <value>Party friend mobile</value>
+    </entry>
+    <entry>
+        <key>referred_by_color</key>
+        <value>#00FFFFFF</value>
+    </entry>
+
+    <entry>
+        <key>referred_required</key>
+        <value>Friend Mobile number should be 10 digits</value>
+    </entry>
+    <entry>
+        <key>referred_title</key>
+        <value>Who encouraged you to install Party App?</value>
+    </entry>
+    <entry>
+        <key>referred_hint</key>
+        <value>Please enter the person’s mobile number</value>
+    </entry>
+
+    <entry>
+        <key>tv_tnc</key>
+        <value><![CDATA[By clicking Register, you agree to our terms and that you have read our <u><font color='blue'>Privacy Policy</font></u>]]></value>
+    </entry>
+
+    //WebView
+    <entry>
+        <key>title_privacy</key>
+        <value>Privacy Policy</value>
+    </entry>
+    <entry>
+        <key>new_mla_postings</key>
+        <value>New Posting</value>
+    </entry>
+
+    //Network
+    <entry>
+        <key>no_connection_error</key>
+        <value>No Connection Error</value>
+    </entry>
+    <entry>
+        <key>allow_network_access</key>
+        <value>Please allow network access to Party app.</value>
+    </entry>
+    <entry>
+        <key>auth_failure_error</key>
+        <value>Auth Failure Error</value>
+    </entry>
+    <entry>
+        <key>server_error</key>
+        <value>Server Error</value>
+    </entry>
+    <entry>
+        <key>network_error</key>
+        <value>Network Error</value>
+    </entry>
+    <entry>
+        <key>parse_error</key>
+        <value>Parse Error</value>
+    </entry>
+    <entry>
+        <key>timeout_error</key>
+        <value>Timeout Error</value>
+    </entry>
+    <entry>
+        <key>pic_upload_failed</key>
+        <value>Failed to upload profile picture to server.Try again later</value>
+    </entry>
+    <entry>
+        <key>network_connected</key>
+        <value>Connected to network</value>
+    </entry>
+    <entry>
+        <key>network_not_connected</key>
+        <value>No internet connection</value>
+    </entry>
+
+
+
+
+    //Verify Otp
+    <entry>
+        <key>verify_otp</key>
+        <value>Verify OTP</value>
+    </entry>
+    <entry>
+        <key>otp_required</key>
+        <value>Enter valid OTP</value>
+    </entry>
+    <entry>
+        <key>enter_otp_text</key>
+        <value>Please enter OTP that has been<br />sent to your mobile number <br /> :mobile</value>
+    </entry>
+    <entry>
+        <key>hint_enter_otp</key>
+        <value>Enter OTP here</value>
+    </entry>
+    <entry>
+        <key>submit</key>
+        <value>Submit</value>
+    </entry>
+    <entry>
+        <key>resend</key>
+        <value>Resend OTP</value>
+    </entry>
+    <entry>
+        <key>sms_header</key>
+        <value>ODParty</value>
+    </entry>
+
+
+    <entry>
+        <key>navigation_drawer_open</key>
+        <value>Open navigation drawer</value>
+    </entry>
+    <entry>
+        <key>navigation_drawer_close</key>
+        <value>Close navigation drawer</value>
+    </entry>
+
+    //Home
+    <entry>
+        <key>send_to</key>
+        <value>Share with</value>
+    </entry>
+    <entry>
+        <key>liked</key>
+        <value>Liked</value>
+    </entry>
+    <entry>
+        <key>like</key>
+        <value>Like</value>
+    </entry>
+    <entry>
+        <key>social_media</key>
+        <value>Social Media</value>
+    </entry>
+    <entry>
+        <key>share_app</key>
+        <value>Share App</value>
+    </entry>
+    <entry>
+        <key>reward</key>
+        <value><![CDATA[Reward <br />(బహుమతి)]]></value>
+    </entry>
+    <entry>
+        <key>alert_title</key>
+        <value><![CDATA[Welcome to <b>YSRTP App</b>]]></value>
+    </entry>
+
+    <entry>
+        <key>alert_info</key>
+        <value>Be the agent of development. Please SHARE 'New Posts' on your 3 social media platforms- Facebook, Twitter and WhatsApp and promote YSRTP's growth story.</value>
+    </entry>
+
+    //Rewards
+    <entry>
+        <key>reward_conditions</key>
+        <value>(బహుమతి) Reward conditions</value>
+    </entry>
+
+    <entry>
+        <key>title_rewards</key>
+        <value>Reward Conditions</value>
+    </entry>
+
+    <entry>
+        <key>share_now</key>
+        <value><![CDATA[<u><font color='red'>(Share Now)</font></u>]]></value>
+    </entry>
+
+    <entry>
+        <key>new_article_count</key>
+        <value>Rewards</value>
+    </entry>
+
+
+    //New Posts Fragment
+    <entry>
+        <key>storage_permission</key>
+        <value>Allow Storage access permission to continue.</value>
+    </entry>
+    <entry>
+        <key>no_new_posts</key>
+        <value>Thank you for Sharing</value>
+    </entry>
+    <entry>
+        <key>latest_articles_count</key>
+        <value> new posts received</value>
+    </entry>
+
+
+
+
+    // Unshared Posts Fragment
+    <entry>
+        <key>no_unshared_posts</key>
+        <value>Be the agent of development. Please SHARE 'New Posts' on your 3 social media platforms- Facebook, Twitter and WhatsApp and promote YSRTP's growth story.</value>
+    </entry>
+
+    // Shared Posts Fragment
+    <entry>
+        <key>no_shared_posts</key>
+        <value>Be the agent of development. Please SHARE 'New Posts' on your 3 social media platforms- Facebook, Twitter and WhatsApp and promote YSRTP's growth story.</value>
+    </entry>
+    <entry>
+        <key>title_share_on</key>
+        <value>Please share on</value>
+    </entry>
+    <entry>
+        <key>title_share_on_all</key>
+        <value>Please share this article</value>
+    </entry>
+
+    <entry>
+        <key>title_all_shared</key>
+        <value>Well Done. <br /> Thanks for Sharing</value>
+    </entry>
+
+    <entry>
+        <key>install_facebook</key>
+        <value>Install Facebook application to share</value>
+    </entry>
+
+
+    <entry>
+        <key>install_twitter</key>
+        <value>Install Twitter application to share</value>
+    </entry>
+
+
+    <entry>
+        <key>install_whatsapp</key>
+        <value>Install WhatsApp application to share</value>
+    </entry>
+
+
+    //Share Dialog
+    <entry>
+        <key>already_shared_on</key>
+        <value>You already shared on </value>
+    </entry>
+    <entry>
+        <key>share_on</key>
+        <value>Please share on  </value>
+    </entry>
+
+
+    // Notifications
+    <entry>
+        <key>no_notifications</key>
+        <value>No messages available</value>
+    </entry>
+
+
+
+
+    //FeedBack
+    <entry>
+        <key>comments_required</key>
+        <value>Your feedback is required</value>
+    </entry>
+    <entry>
+        <key>min_comments_required</key>
+        <value>Minimum feedback is required</value>
+    </entry>
+
+
+    // My Profile
+    <entry>
+        <key>logout_confirmation</key>
+        <value>Are you sure you want to logout?</value>
+    </entry>
+
+    <entry>
+        <key>info</key>
+        <value>Confirm logout</value>
+    </entry>
+
+    <entry>
+        <key>error_occured</key>
+        <value>Error Occurred</value>
+    </entry>
+    <entry>
+        <key>my_profile</key>
+        <value>My Profile</value>
+    </entry>
+    <entry>
+        <key>notifications</key>
+        <value>Messages</value>
+    </entry>
+    <entry>
+        <key>feedback</key>
+        <value>Feedback</value>
+    </entry>
+    <entry>
+        <key>title_camera_profile</key>
+        <value>Select an option to upload</value>
+    </entry>
+    <entry>
+        <key>new_posts</key>
+        <value>New Posts</value>
+    </entry>
+    <entry>
+        <key>shared_posts</key>
+        <value>Shared Posts</value>
+    </entry>
+    <entry>
+        <key>unshared_posts</key>
+        <value>Partially Shared</value>
+    </entry>
+    <entry>
+        <key>press_back_to_exit</key>
+        <value>Press once again to exit!</value>
+    </entry>
+    <entry>
+        <key>notification_topic</key>
+        <value>test</value>
+    </entry>
+    <entry>
+        <key>session_expired</key>
+        <value>You have logged in from another device. Please login again</value>
+    </entry>
+    <entry>
+        <key>no_new_mla_posts</key>
+        <value>Create your first YSRTP post</value>
+    </entry>
+    <entry>
+        <key>test</key>
+        <value>local</value>
+    </entry>
+
+    //Social Links
+
+    <entry>
+        <key>party_social_link_1</key>
+        <value>https://www.facebook.com/YSRTelanganaParty/</value>
+    </entry>
+    <entry>
+        <key>party_social_link_2</key>
+        <value>https://twitter.com/YSRTelangana</value>
+    </entry>
+    <entry>
+        <key>party_social_link_3</key>
+        <value>http://ysrtelangana.com/</value>
+    </entry>
+    <entry>
+        <key>party_social_link_icon_1</key>
+        <value>https://upload.wikimedia.org/wikipedia/commons/c/c2/Facebook_icon_192.png</value>
+    </entry>
+    <entry>
+        <key>party_social_link_icon_2</key>
+        <value>https://ecfr.eu/wp-content/uploads/Twitter_logo_round_transp.png</value>
+    </entry>
+    <entry>
+        <key>party_social_link_icon_3</key>
+        <value>https://upload.wikimedia.org/wikipedia/commons/e/ee/WWW_icon_-_Digital_Preservation.png</value>
+    </entry>
+
+
+    <entry>
+        <key>leader_social_link_1</key>
+        <value>https://www.facebook.com/IMSharmilaReddy/</value>
+    </entry>
+    <entry>
+        <key>leader_social_link_2</key>
+        <value>https://twitter.com/realyssharmila</value>
+    </entry>
+    <entry>
+        <key>leader_social_link_3</key>
+        <value>https://www.instagram.com/realyssharmila/?hl=en</value>
+    </entry>
+    <entry>
+        <key>leader_social_link_icon_1</key>
+        <value>https://upload.wikimedia.org/wikipedia/commons/c/c2/Facebook_icon_192.png</value>
+    </entry>
+    <entry>
+        <key>leader_social_link_icon_2</key>
+        <value>https://ecfr.eu/wp-content/uploads/Twitter_logo_round_transp.png</value>
+    </entry>
+    <entry>
+        <key>leader_social_link_icon_3</key>
+        <value>https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png</value>
+    </entry>
+
+</defaultsMap>
+    <!-- END xml_defaults -->

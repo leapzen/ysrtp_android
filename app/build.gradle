@@ -1,0 +1,98 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('/home/maheshpujala/WorkSpace/AndroidProjects/Party_App/releaseKey.jks')
+            storePassword 'android'
+            keyAlias 'ysrtp'
+            keyPassword 'android'
+        }
+    }
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "ysrtp.party.app"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 8
+        versionName "1.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            jniDebuggable true
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    // Support libraries
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+
+
+    // External Dependencies
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // Network and Parsing
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Glide Image Loading Library
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    // ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    // Navigation Arch. Component
+    implementation 'androidx.navigation:navigation-fragment:2.4.0-beta02'
+
+    // FireBase
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-core:20.0.0'
+    implementation 'com.google.firebase:firebase-config:21.0.1'
+    implementation 'com.google.firebase:firebase-analytics:20.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.4'
+    implementation 'com.google.firebase:firebase-perf:20.0.3'
+
+    //okhttp
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'
+    // Flexbox layout
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+        testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

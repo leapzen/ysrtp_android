@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/view_image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".viewarticle.ViewArticleActivity">
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"/>
+
+        <ysrtp.party.app.viewarticle.TouchImageView
+            android:id="@+id/iv_full_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize">
+                <ImageButton
+                    android:id="@+id/im_btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:onClick="backClicked"
+                    android:background="@drawable/ic_arrow_back_white"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/im_btn_back"
+                    android:layout_toStartOf="@+id/im_btn_download"
+                    android:textSize="@dimen/_14sdp"/>
+                <ImageButton
+                    android:id="@+id/im_btn_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:onClick="downloadImage"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_file_download"
+                    android:contentDescription="TODO" />
+            </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_content"
+            android:background="@color/translucent_gray"
+            android:textColor="@color/white"
+            android:enabled="true"
+            android:textIsSelectable="true"
+            android:focusable="true"
+            android:longClickable="true"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</layout>

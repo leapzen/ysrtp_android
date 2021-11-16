@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".home.HomeActivity">
+
+    <data>
+        <variable
+            name="user"
+            type="ysrtp.party.app.membersregister.UserDetailsModel"/>
+    </data>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/_180sdp"
+                    android:background="@color/colorPrimaryDark"/>
+                <include
+                    android:id="@+id/leader_social_layout"
+                    layout="@layout/leader_social_layout"
+                    android:layout_below="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:id="@+id/divider_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/leader_social_layout"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <include
+                    android:id="@+id/ysrtp_social_layout"
+                    layout="@layout/ysrtp_social_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_notification"
+                    android:layout_below="@+id/divider_two" />
+                <View
+                    android:id="@+id/divider_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_above="@+id/tv_notification"
+                    android:background="@color/colorPrimaryDark"/>
+                <TextView
+                    android:id="@+id/tv_notification"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_above="@+id/divider_four"
+                    android:drawablePadding="@dimen/_18sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:drawableLeftCompat="@drawable/ic_notifications" />
+                <View
+                    android:id="@+id/divider_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_above="@+id/tv_feedback"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentBottom="true"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center|start"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/feedback"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_18sdp"
+                    app:drawableStartCompat="@drawable/ic_feedback" />
+
+            </RelativeLayout>
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

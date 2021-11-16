@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".home.HomeActivity">
+
+    <data>
+        <variable
+            name="user"
+            type="ysrtp.party.app.membersregister.UserDetailsModel"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetStartWithNavigation="0dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_reward_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical|center"
+                            android:text="@string/rewards"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:layout_marginEnd="@dimen/_3sdp"/>
+                        <ImageView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:id="@+id/iv_reward_image"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_trophy"
+                            android:layout_toEndOf="@+id/tv_reward_title"
+                            android:contentDescription="TODO" />
+
+                        <TextView
+                            android:id="@+id/tv_share_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:layout_toStartOf="@+id/iv_share_image"
+                            android:gravity="center"
+                            android:text="@string/share_app"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_15sdp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/iv_share_image"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:background="@mipmap/ic_launcher"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="TODO" />
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:background="@color/white"
+                    app:tabIndicatorColor="@color/colorSecondary"
+                    app:tabTextColor="@color/gray"
+                    app:tabSelectedTextColor="@color/colorSecondary"
+                    app:tabIndicatorHeight="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="fill"
+                    app:tabTextAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                    app:tabMode="fixed">
+
+                </com.google.android.material.tabs.TabLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:id="@+id/fab_create_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_person"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_margin="@dimen/_15sdp"/>
+    </RelativeLayout>
+</layout>

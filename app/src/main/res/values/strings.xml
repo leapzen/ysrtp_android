@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">YSRTP</string>
+
+    //Splash
+    <string name="update">Update</string>
+
+    //Login
+    <string name="login">Login</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_district">District</string>
+    <string name="hint_constituency">Assembly Constituency</string>
+    <string name="hint_panchayat">Gram Panchayat</string>
+    <string name="hint_block">Block/Municipality/NAC</string>
+    <string name="register">Register</string>
+    <string name="hint_ward">Ward Number</string>
+
+
+    //Verify Otp
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_otp_text">Please enter OTP that has been<br /> sent to your mobile <br /> :mobile</string>
+    <string name="hint_enter_otp">Enter OTP here</string>
+    <string name="submit">Submit</string>
+    <string name="resend"><![CDATA[I didn\'t receive code. <font color=\'#00E4C5\'> <b> Resend OTP </b></font>]]></string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //Home
+    <string name="follow_leader">Follow Leader</string>
+
+
+    //New Posts Fragment
+    <string name="no_new_posts">Thank you for Sharing</string>
+
+    // Unshared Posts Fragment
+    <string name="no_unshared_posts">Be the agent of development. Please SHARE \'New Posts\' on your 3 social media platforms- Facebook, Twitter and WhatsApp and promote AP growth story.</string>
+
+    // Shared Posts Fragment
+    <string name="no_shared_posts">Be the agent of development. Please SHARE \'New Posts\' on your 3 social media platforms- Facebook, Twitter and WhatsApp and promote AP growth story.</string>
+
+    <string name="mla_postings">My Postings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="notifications">Messages</string>
+    <string name="feedback">Feedback</string>
+    <string name="title_camera_profile">Select an option to upload image</string>
+    <string name="share_app">Share App</string>
+    <string name="hint_feedback">Your Feedback</string>
+    <string name="close">Close</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="follow_party">Follow YSRTP</string>
+    <string name="rewards">Reward <br />(బహుమతి) </string>
+    <string name="rewards_title">Reward </string>
+    <string name="your_unshared_posts">Your Unshared Posts</string>
+
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="other_apps">Other Apps</string>
+    <string name="share_chat">Share Chat</string>
+    <string name="instagram">Instagram</string>
+    <string name="logout">Logout</string>
+    <string name="well_done_nthanks_for_sharing">Well Done. <br /> Thanks for Sharing</string>
+
+    <string name="notificaiton_count">Messages <![CDATA[<b><font color=\'red\'>(%1$d)</font></b>]]></string>
+    <string name="hint_referred_by">Please enter the person’s mobile number</string>
+    <string name="title_referred_by">Who encouraged you to install YSRTP App?</string>
+    <string name="proceed">Proceed</string>
+    <string name="india_code">+91&#160;</string>
+
+    <string name="no_mla_posts">No posts created.</string>
+</resources>

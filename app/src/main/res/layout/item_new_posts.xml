@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="newPosts"
+            type="ysrtp.party.app.home.SingleArticle"/>
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/colorSecondary"
+        app:strokeWidth="2dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/transparent"
+                android:contentDescription="TODO"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:largeImage="@{newPosts.large}"
+                android:smallImage="@{newPosts.small}" />
+
+            <ImageView
+                android:id="@+id/iv_new_post"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@drawable/ic_new"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="@{newPosts.newPost ? View.VISIBLE : View.GONE}"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:background="@{newPosts.articleType}"
+                android:visibility='@{newPosts.articleType.equalsIgnoreCase("normal") ? View.GONE : View.VISIBLE}'
+                android:layout_centerInParent="true"
+                android:contentDescription="TODO" />
+
+            <RelativeLayout
+                android:id="@+id/holder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/iv_post"
+                app:layout_constraintTop_toBottomOf="@+id/iv_post">
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_alignParentStart="true"
+                    app:drawableTopCompat="@drawable/ic_share" />
+                <TextView
+                    android:id="@+id/tv_published_at"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:text="@{newPosts.published_at}"
+                    android:layout_toEndOf="@+id/tv_share"
+                    android:layout_toStartOf="@+id/tv_like"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility='@{(newPosts.articleType.equalsIgnoreCase("twitter") || newPosts.articleType.equalsIgnoreCase("facebook")) ? View.GONE : View.VISIBLE}'
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:drawableTop="@{newPosts.favourite ? @drawable/ic_favorite : @drawable/ic_not_favorite}" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

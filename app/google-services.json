@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "539680776334",
+    "project_id": "ysrtp-5adfc",
+    "storage_bucket": "ysrtp-5adfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539680776334:android:5115de2a3a6b0ff3e469df",
+        "android_client_info": {
+          "package_name": "ysrtp.party.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539680776334-4dn4am41v3sn96ijk1i8s8labl0phga4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ysrtp.party.app",
+            "certificate_hash": "581084e878d02154926f0dceb1be333a8a0b1446"
+          }
+        },
+        {
+          "client_id": "539680776334-c7k2ad895skuv2q328d59a9eufjqu72l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ysrtp.party.app",
+            "certificate_hash": "d9ad63aa2c1cfe2bd0c7c04bdb008a4f53e25a85"
+          }
+        },
+        {
+          "client_id": "539680776334-47qln9ppsalt5jsc9pgu22puem6e95ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnrA-T6-jwuOuBHZOGQmpZfMtia5TF4Dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539680776334-47qln9ppsalt5jsc9pgu22puem6e95ar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
